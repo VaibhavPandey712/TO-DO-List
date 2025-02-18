@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#" data-category="my-day">My Day</a></li>
+        <li><a href="#" data-category="important">Important</a></li>
+        <li><a href="#" data-category="study">Study</a></li>
+        <li><a href="#" data-category="college">College</a></li>
+        <li><a href="#" data-category="self-improvement">Self Improvement</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="header">
+        <h1 id="category-title">My Day</h1>
+        <button id="add-task">+ Add Task</button>
+      </div>
+       <div class="task-input-container" id="task-input-container">
+        <input type="text" id="task-input" placeholder="Enter a new task...">
+        <button id="submit-task">Add</button>
+        <button id="cancel-task">Cancel</button>
+      </div>
+      <div class="todo-list" id="todo-list">
+       </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
